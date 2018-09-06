@@ -1,0 +1,16 @@
+<head>
+  <title>calendar</title>
+</head>
+
+<body><h1>Welcome to your Calendar EPSI</h1></body>
+
+<template name="Index">
+	{{#each Events}}
+		<hr>
+		<p>{{this.start}}</p>
+		<p>{{this.end}}</p>
+		<p>{{this.title}}</p>
+		<p>{{this.teacher}}</p>
+	{{/each}}
+	{{> ecalendar}}
+</template>
